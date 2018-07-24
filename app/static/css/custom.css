@@ -1,0 +1,23 @@
+body{
+    padding-left: 50px !important;
+    padding-right:50px !important;
+    background:#eeeeee !important;
+}
+
+.content{
+    padding:20px;
+    background:#ffffff;
+}
+
+
+.footer {
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+    background: #44b !important;
+    text-align:center;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+.borderless td, .borderless th {
+    border: none;
+}
