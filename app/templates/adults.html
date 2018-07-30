@@ -1,13 +1,83 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
+    <h2>Why Learn German?</h2>
+
+    <p>
+        There are many reasons to learn German. Three top reasons are
+        <a href="#career">career</a>,
+        <a href="#travel">travel</a> and <a href="#culture">cultural
+        appreciation</a>.
+
+    </p>
+    <h3><a name="career">Career</a></h3>
+    <img class="float-right" border="0" src="{{ url_for('static', filename='art/bus.jpg') }}">
+    <p>
+        <b>Business:</b> Knowing the language of your German-speaking
+        business partners
+        improves your chances for effective communication and success.
+    </p>
+    <p>
+        <b>The global career:</b> Proficiency in
+        German helps you to function productively for an employer with global
+        business connections.
+        Knowing German can increase your job
+        opportunities with German
+        and foreign companies in the US and abroad.
+    </p>
+    <p>
+        <b>Science and Research:</b> German is the second most commonly used
+        language for science and technology.
+        Germany is the third largest contributor to research and
+        development and offers research fellowships to scientists from abroad.
+    </p>
+    <p>
+        <b>Opportunities to work or study in Germany:</b> Germany awards a generous
+        number of scholarships and other support to study in Germany.
+        Working holiday visas are available for young foreigners from
+        a range of countries, and special visas are offered to skilled
+        workers and professionals.
+
+    </p>
+
+    <img class="float-right" border="0" src="{{ url_for('static', filename='art/land1.png') }}">
+
+    <h3><a name="travel">Travel</a></h3>
+    <p>
+        <b>Travel in Europe:</b> Make the most of your travels not only in
+        German-speaking
+        countries, but in many other European countries where German is
+        widely spoken, especially in Eastern Europe.
+    </p>
+    <p>
+        <b>Tourism and the hospitality industry here in the US:</b>
+        Tourists from German-speaking countries travel far and wide, and are
+        the world's biggest spenders when on holiday. They appreciate to be
+        looked after by German-speaking staff and tour guides.
+    </p>
+
+    <h3><a name="culture">Culture</a></h3>
+ <img class="float-right" border="0" src="{{ url_for('static', filename='art/freud_einstein.jpg') }}">
+    <p>
+        <b>Cultural understanding:</b>
+        Learning German will help you broaden your horizons, and give you
+        insight into other peoples and cultures.
+    </p>
+    <p>
+        <b>Enjoyment of literature, music, art and philosophy:</b> German is the
+        language of Goethe, Kafka, Mozart, Bach and Beethoven. Indulge in
+        reading and/or listening to their works in their original language.
+    </p>
+
+<hr>
+
     <p>Group classes have a maximum of six students each, so that each
         student receives personal attention. Classes
         start in September (fall term) and February
         (spring term). Classes do start at other times
         corresponding to the needs of our students. Students can join
         classes at any time of the year and tuition is pro-rated.
-        <a href="lm-reg-adults.pdf">Registraton form</a>
+        <a target="_blank" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Registration form</a>
     </p>
 
     <ul>

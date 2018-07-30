@@ -1,25 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <p>Group classes have a maximum of six students each, so that each
-        child receives personal attention. Classes
-        start with the school calendar, in September (fall term) and January
-        (spring term). Each term is 16 weeks long. Students are accepted throughout
-        the year and tuition is pro-rated.
-        <a href="lm-reg-kids.pdf">Registraton form</a>.
-    </p>
-    There are various summer classes available in August 2009.
-    Please check back soon for details, or email us.
 
-    <ul>
-        <li><a href="foreign.shtml">German as a Foreign Language</a></li>
-        <li><a href="native.shtml">German as a Native Language</a></li>
-        <li><a href="second.shtml">German as a Second Language</a></li>
-        <li><a href="private.shtml">Private and Semi-Private Instruction</a></li>
-        <li><a href="whyyoung.shtml">Why Learn Young?</a></li>
-    </ul>
-
-<hr>
     <h2>Why Learn Young?</h2>
     <p>
         Young children are uniquely suited to learning language.
@@ -102,8 +84,60 @@
         </li>
     </ul>
 <hr>
+    <h2>We offer:</h2>
+     <p>Group classes have a maximum of six students each, so that each
+        child receives personal attention. Classes
+        start with the school calendar, in September (fall term) and January
+        (spring term). Each term is 16 weeks long. Students are accepted throughout
+        the year and tuition is pro-rated.
+        <a target="_blank" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Registraton form</a>.
+    </p>
+    <p>There are various summer classes available for various levels and ages. Please email us for more details.</p>
+    <img class="float-right" border="0" src="{{ url_for('static', filename='art/cert.png') }}">
 
+        <p>
+        <a name="free">We offer a free consultation and evaluation lesson to
+        every prospective student. The purpose of this meeting is to
+        find out what level and kind of lessons are right for the
+        student. An added benefit is that the student can meet the teacher and find
+        out more about us.</a>
+        </p>
+    <h3>Classes are available for various levels and ages</h3>
 
+    <ul>
+        <li><b>German as a Foreign Language</b></li>
+        <ul>
+            <li>Level: German for Toddlers Ages 18 months - 3 1/2 years</li>
+            <li>Level: Preschool through Kindergarten Ages 4-6</li>
+            <li>Level: Beginners Ages 6-8</li>
+            <li>Level: Beginners Ages 8-11</li>
+            <li>Level: Beginners Ages 9-12</li>
+        </ul>
+            <li><b>German as a Native Language</b></li>
+        <ul>
+            <li>Level: German for Toddlers Ages 18 months - 3 1/2 years</li>
+            <li>Level: Preschool through Kindergarten Ages 4-6</li>
+            <li>Level: German as a Second Language 1 Ages 6-9</li>
+            <li>Level: German as a Second Language 2 Ages 10-13</li>
+            <li>Level: German as a Second Language 2 Ages 10-13</li>
+            <li>Level: German as a Second Language 3 for Teenagers
+                (includes preparation for AP German test)</li>
+        </ul>
+            <li><b>German as a Second Language</b></li>
+        <ul>
+            <li>Level: German as a Native Language 1 <i>corresponds to German Kindergarten</i></li>
+            <li>Level: German as a Native Language 2 <i>corresponds to German Klasse 2 und 3</i></li>
+            <li>Level: German as a Native Language 3 <i>corresponds to German Klasse 4 und 5</i></li>
+            <li>Level: German as a Native Language 4 <i>corresponds to German Klasse 6 und 7</i></li>
+            <li>Level: German as a Native Language 5 <i>corresponds to German Klasse 8 und 9</i></li>
+            <li>Level: German as a Native Language 6 <i>corresponds to German Klasse 10 bis 12</i></li>
+        </ul>
+            <li><b>Private and Semi-Private Instruction</b></li>
+        <ul>
+            <li>If your schedule does not permit attending our scheduled classes, you may be interested in private instruction. We can arrange classes at times and locations to suit your busy schedule, at a price that offers excellent value for money. Please contact us for details.</li>
+        </ul>
+    </ul>
+<hr>
 
 </div>
 {% endblock %}

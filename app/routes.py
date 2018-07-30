@@ -24,6 +24,9 @@ def resources():
 def contact():
     return render_template("contact.html")
 
+@app.route('/job')
+def job():
+    return render_template("job.html")
 
 
 

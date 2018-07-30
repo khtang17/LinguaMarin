@@ -51,7 +51,7 @@
     <script src="{{ url_for('static', filename='js/plugins/moment.min.js') }}"></script>
 
     <!-- Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="{{ url_for('static', filename='js/plugins/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/bootstrap-datetimepicker.js') }}"></script>
 
     <!-- Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script src="{{ url_for('static', filename='js/plugins/nouislider.min.js') }}"></script>
@@ -60,13 +60,11 @@
     <script src="{{ url_for('static', filename='js/material-kit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/viewTracker.js') }}"></script>
     <script>
-  {% block js %}
-  $(".nav li").on("click", function() {
-            $(".nav li").removeClass("active");
-            $(this).addClass("active");
-          });
-
-  {% endblock %}
+   $("#navbar-content").on("click", function(){
+      $("#navbar-content li").find(".active").removeClass("active");
+       $(this).addClass("active");
+  });
+  {% block js %}{% endblock %}
 </script>
   </body>
 </html>
