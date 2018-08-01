@@ -1,92 +1,44 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-    <h2>Why Learn German?</h2>
-
-    <p>
-        There are many reasons to learn German. Three top reasons are
-        <a href="#career">career</a>,
-        <a href="#travel">travel</a> and <a href="#culture">cultural
-        appreciation</a>.
-
-    </p>
-    <h3><a name="career">Career</a></h3>
-    <img class="float-right" border="0" src="{{ url_for('static', filename='art/bus.jpg') }}">
-    <p>
-        <b>Business:</b> Knowing the language of your German-speaking
-        business partners
-        improves your chances for effective communication and success.
-    </p>
-    <p>
-        <b>The global career:</b> Proficiency in
-        German helps you to function productively for an employer with global
-        business connections.
-        Knowing German can increase your job
-        opportunities with German
-        and foreign companies in the US and abroad.
-    </p>
-    <p>
-        <b>Science and Research:</b> German is the second most commonly used
-        language for science and technology.
-        Germany is the third largest contributor to research and
-        development and offers research fellowships to scientists from abroad.
-    </p>
-    <p>
-        <b>Opportunities to work or study in Germany:</b> Germany awards a generous
-        number of scholarships and other support to study in Germany.
-        Working holiday visas are available for young foreigners from
-        a range of countries, and special visas are offered to skilled
-        workers and professionals.
-
-    </p>
-
-    <img class="float-right" border="0" src="{{ url_for('static', filename='art/land1.png') }}">
-
-    <h3><a name="travel">Travel</a></h3>
-    <p>
-        <b>Travel in Europe:</b> Make the most of your travels not only in
-        German-speaking
-        countries, but in many other European countries where German is
-        widely spoken, especially in Eastern Europe.
-    </p>
-    <p>
-        <b>Tourism and the hospitality industry here in the US:</b>
-        Tourists from German-speaking countries travel far and wide, and are
-        the world's biggest spenders when on holiday. They appreciate to be
-        looked after by German-speaking staff and tour guides.
-    </p>
-
-    <h3><a name="culture">Culture</a></h3>
- <img class="float-right" border="0" src="{{ url_for('static', filename='art/freud_einstein.jpg') }}">
-    <p>
-        <b>Cultural understanding:</b>
-        Learning German will help you broaden your horizons, and give you
-        insight into other peoples and cultures.
-    </p>
-    <p>
-        <b>Enjoyment of literature, music, art and philosophy:</b> German is the
-        language of Goethe, Kafka, Mozart, Bach and Beethoven. Indulge in
-        reading and/or listening to their works in their original language.
-    </p>
-
-<hr>
+     <a class="btn btn-rose float-right" target="_blank" href="{{ url_for('static', filename='files/lm-reg-adults.pdf') }}">Registration form</a>
+<h2>Adult Students</h2>
 
     <p>Group classes have a maximum of six students each, so that each
         student receives personal attention. Classes
         start in September (fall term) and February
         (spring term). Classes do start at other times
         corresponding to the needs of our students. Students can join
-        classes at any time of the year and tuition is pro-rated.
-        <a target="_blank" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Registration form</a>
-    </p>
+        classes at any time of the year and tuition is pro-rated.</p>
 
+    <img class="float-right" border="0" src="{{ url_for('static', filename='art/cert.png') }}">
+
+        <p>
+        <a name="free">We offer a free consultation and evaluation lesson to
+        every prospective student. The purpose of this meeting is to
+        find out what level and kind of lessons are right for the
+        student. An added benefit is that the student can meet the teacher and find
+        out more about us.</a>
+        </p>
+    <h3>Classes are available for various levels and ages</h3>
     <ul>
-        <li><a href="beginner.shtml">Beginners</a></li>
-        <li><a href="intermediate.shtml">Intermediate</a></li>
-        <li><a href="advanced.shtml">Advanced</a></li>
-        <li><a href="business.shtml">German for Business</a></li>
-        <li><a href="aprivate.shtml">Private and Semi-Private Instruction</a></li>
-        <li><a href="whygerman.shtml">Why Learn German?</a></li>
+        <li><b>German for Beginners</b></li>
+        <ul>
+            <li>Level: Beginners Level A1.1<i>(complete beginners)</i></li>
+            <li>Level: Beginners Level A2.1</li>
+            <li>Level: Beginners Level A2.1</li>
+        </ul>
+        <li><b>Intermediate German</b></li>
+        <ul>
+            <li>Level: Intermediate Level B1.1</li>
+            <li>Level: Intermediate Level B1.2</li>
+            <li>Level: German Culture Through Film <i>(Movie Nights)</i></li>
+        </ul>
+        <li><b>Advanced German</b></li>
+        <ul>
+            <li>Level B2</li>
+            <li>German Culture Through Film <i>(Movie Nights)</i></li>
+        </ul>
     </ul>
 
 

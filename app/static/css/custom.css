@@ -14,7 +14,8 @@ body{
 }
 img{
     display:block !important;
-    padding:20px !important;
+    padding:10px !important;
+    overflow:hidden !important;
 }
 hr {
   postition:relative;
@@ -48,4 +49,8 @@ hr {
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+.container {
+    overflow: hidden;
+
 }

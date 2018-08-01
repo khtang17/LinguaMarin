@@ -12,37 +12,18 @@
                 <td>
                  <p>
                 We offer German language classes for
-                <a href="children.shtml">children</a> and
-                <a href="adults.shtml">adults</a> at all levels.
+                     <a href="{{ url_for('children') }}">children</a> and <a href="{{ url_for('adults') }}">adults</a> at all levels.</strong>
                 We always have <i>small classes</i> so that we can give each student the
                 <i>personal attention</i> he or she deserves. German Language 101 is different
                 from other German language schools, because we
                 <i>tailor the course to suit the students</i>. We select authentic German
                 books and multimedia
-                to match the level, interests, and objectives of the pupils.
-                For <a href="{{ url_for('children') }}">children</a>, we offer three distinct approaches:
-                </td>
-            <td>
-                <img src="{{ url_for('static', filename='art/flag_d.jpg') }}" alt="flag_d"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                 <ul>
-                     <li><a href="foreign.shtml">German as a foreign language</a></li>
-                     <li><a href="second.shtml">German as a second language</a></li>
-                     <li><a href="native.shtml">German for native speakers</a></li>
-                 </ul>
-            </td>
-            <td>
-                 <img src="{{ url_for('static', filename='art/flag_ch.jpg') }}" alt="flag_ch"/>
-            </td>
-        </tr>
+                     to match the level, interests, and objectives of the pupils.</p>
         <tr>
             <td>
                 <p>Learning German at any age can be
-                    <a href="whygerman.shtml">beneficial</a>, but it is particularly
-                    <a href="whyyoung.shtml">advantageous for children</a>. We have a
+                    <a href="{{ url_for('whygerman') }}">beneficial</a>, but it is particularly
+                    <a href="{{ url_for('children') }}">advantageous for children</a>. We have a
                     teaching philosophy that focuses on
                     learning by speaking. You can read more
                     about who we are <a href="aboutus.shtml">here</a>.

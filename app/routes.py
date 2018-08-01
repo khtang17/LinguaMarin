@@ -28,5 +28,9 @@ def contact():
 def job():
     return render_template("job.html")
 
+@app.route('/whygerman')
+def whygerman():
+    return render_template("whygerman.html")
+
 
 

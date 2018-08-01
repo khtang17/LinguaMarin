@@ -6,9 +6,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto" id="navbar-content">
+      <ul class="navbar-nav" id="navbar-content">
         <li class="nav-item active">
           <a class="nav-link" href="{{ url_for('home') }}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('whygerman') }}">Why Learning German?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('children') }}">Children</a>
@@ -21,6 +24,16 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+        </li>
+        <li class="nav-btn dropdown">
+                <a href="#" class="dropdown-toggle btn btn-rose btn-round" data-toggle="dropdown">Register Now!</a>
+                   <ul class="dropdown-menu dropdown-primary dropdown-menu-right">
+                     <li class="dropdown-header">Registration forms</li>
+                     <li><a href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">For Children</a></li>
+                      <li class="divider"></li>
+                     <li><a href="{{ url_for('static', filename='files/lm-reg-adults.pdf') }}">For Adults</a></li>
+                   </ul>
+
         </li>
       </ul>
     </div>

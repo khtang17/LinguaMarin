@@ -84,13 +84,15 @@
         </li>
     </ul>
 <hr>
-    <h2>We offer:</h2>
+    <a class="btn btn-rose float-right" target="_blank" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Registraton form</a>
+    <h2>Young Students</h2>&nbsp;
+
      <p>Group classes have a maximum of six students each, so that each
         child receives personal attention. Classes
         start with the school calendar, in September (fall term) and January
         (spring term). Each term is 16 weeks long. Students are accepted throughout
         the year and tuition is pro-rated.
-        <a target="_blank" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Registraton form</a>.
+
     </p>
     <p>There are various summer classes available for various levels and ages. Please email us for more details.</p>
     <img class="float-right" border="0" src="{{ url_for('static', filename='art/cert.png') }}">
@@ -137,7 +139,7 @@
             <li>If your schedule does not permit attending our scheduled classes, you may be interested in private instruction. We can arrange classes at times and locations to suit your busy schedule, at a price that offers excellent value for money. Please contact us for details.</li>
         </ul>
     </ul>
-<hr>
+
 
 </div>
 {% endblock %}
