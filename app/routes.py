@@ -32,5 +32,9 @@ def job():
 def whygerman():
     return render_template("whygerman.html")
 
+@app.route('/aboutus')
+def aboutus():
+    return render_template("aboutus.html")
+
 
 

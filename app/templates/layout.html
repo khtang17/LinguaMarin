@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='art/lm.ico') }}" type="image/x-icon" />
 
     <!-- Material Kit CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/material-kit.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/material-kit.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
     {% block css %}{% endblock %}
 
@@ -60,10 +60,13 @@
     <script src="{{ url_for('static', filename='js/material-kit.js') }}"></script>
     <script src="{{ url_for('static', filename='js/viewTracker.js') }}"></script>
     <script>
-   $("#navbar-content").on("click", function(){
-      $("#navbar-content li").find(".active").removeClass("active");
-       $(this).addClass("active");
-  });
+  $(function(){
+    $('#nav a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+    $('#nav a').click(function(){
+      $(this).parent().addClass('active').siblings().removeClass('active')  
+    })
+  })
+
   {% block js %}{% endblock %}
 </script>
   </body>

@@ -11,7 +11,9 @@ body{
 .content{
     padding:20px;
     background:#ffffff;
+
 }
+
 img{
     display:block !important;
     padding:10px !important;
@@ -28,6 +30,7 @@ hr {
     text-align:center;
     margin-top:auto;
     margin-bottom: auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .borderless td, .borderless th {
     border: none;
@@ -44,6 +47,7 @@ hr {
 
 .fa:hover {
     opacity: 0.7;
+    color:#ffffff;
 }
 
 .fa-facebook {
@@ -53,4 +57,25 @@ hr {
 .container {
     overflow: hidden;
 
+}
+.navbar{
+  padding-left:30px;
+  padding-right:30px;
+}
+.navbar-brand{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px !important;
+  font-style: bold;
+  font-variant: small-caps;
+}
+#job {
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  border: 2px dashed #f69c55;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }

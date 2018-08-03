@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container">
-     <a class="btn btn-rose float-right" target="_blank" href="{{ url_for('static', filename='files/lm-reg-adults.pdf') }}">Registration form</a>
+    
 <h2>Adult Students</h2>
 
     <p>Group classes have a maximum of six students each, so that each
@@ -39,8 +39,43 @@
             <li>Level B2</li>
             <li>German Culture Through Film <i>(Movie Nights)</i></li>
         </ul>
+        <li><b>German for Business</b></li>
+            <ul>
+                <li>
+                    For the convenience of our business customers, we can offer classes at your place of work in Mill Valley, Corte Madera, San Anselmo, Fairfax, Greenbrae, Kentfield, Larkspur, Novato, Ross, Sausalito, Tiburon, San Rafael. We can also offer classes in Sonoma and Napa.
+                </li>
+            </ul>
+        <li><b>Private and Semi-Private Instruction</b></li>
+        <ul>
+            <li>If your schedule does not permit attending our scheduled classes, you may be interested in private instruction. We can arrange classes at times and locations to suit your busy schedule, at a price that offers excellent value for money. Please contact us for details.</li>
+        </ul>
     </ul>
+    <hr>
+    <h3>German Anywhere®</h3>
+      <p>      For our clients who travel, move to or live in a German-speaking country, 
+        we offer German Anywhere&reg;, a new and 
+        convenient way to learn German at a time and place that suits you.</p>
+        <img class="float-right" border="0" src="{{ url_for('static', filename='art/anywhere.png') }}">
+        <p>Here is how  it works.</p>
+        <ul>
+            <li>You purchase the textbook for the course.</li>
+            <li>You connect to the internet using your computer.</li>
+            <li>Before the lesson begins, you will be sent any additional materials necessary.</li>
+            <li>You follow lessons with two way audio and video and other multimedia directly 
+            between you and your German Language 101 teacher.</li>
+        </ul>
+        <p>Depending on what time zone you are in, lesson times can be chosen that 
+        are convenient for you. There is no additional fee for this service beyond the 
+        normal German Language 101 rate.</p>
 
+        
+        <p>Do you think this might work for you?  Trial lessons at German Language 101
+        are always free and 
+        come with no obligation.  So why not contact us today to see whether our 
+        German Anywhere&reg; service is right for you?</p>
+
+
+<!--  <a class="btn btn-rose float-right" target="_blank" href="{{ url_for('static', filename='files/lm-reg-adults.pdf') }}">Registration form</a> -->
 
 </div>
 {% endblock %}

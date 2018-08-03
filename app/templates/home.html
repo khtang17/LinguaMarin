@@ -4,7 +4,7 @@
 
     <table class="table borderless">
             <tr>
-                <td><h4>Welcome to <b>German Language 101</b>, a German Language School in San Rafael, Marin County, California!</h4></td>
+                <td><h3 class="text-center">Welcome to <b>German Language 101</b><br>A German Language School in San Rafael, Marin County, California!</h3></td>
                 <td><img src="{{ url_for('static', filename='art/free2.gif') }}" alt="free2"/></td>
 
             </tr>
@@ -14,11 +14,13 @@
                 We offer German language classes for
                      <a href="{{ url_for('children') }}">children</a> and <a href="{{ url_for('adults') }}">adults</a> at all levels.</strong>
                 We always have <i>small classes</i> so that we can give each student the
-                <i>personal attention</i> he or she deserves. German Language 101 is different
+                <i>personal attention</i> he or she deserves. 
+                German Language 101 is different
                 from other German language schools, because we
                 <i>tailor the course to suit the students</i>. We select authentic German
                 books and multimedia
-                     to match the level, interests, and objectives of the pupils.</p>
+                     to match the level, interests, and objectives of the pupils.</p></td>
+                <td><img src="{{ url_for('static', filename='art/flag_d.jpg') }}" alt="flag_d"/></td>
         <tr>
             <td>
                 <p>Learning German at any age can be
@@ -26,12 +28,12 @@
                     <a href="{{ url_for('children') }}">advantageous for children</a>. We have a
                     teaching philosophy that focuses on
                     learning by speaking. You can read more
-                    about who we are <a href="aboutus.shtml">here</a>.
+                    about who we are <a href="{{ url_for('aboutus') }}">here</a>.
 
                 </p>
             </td>
             <td>
-                <img src="{{ url_for('static', filename='art/flag_a.jpg') }}" alt="flag_a"/>
+                <img src="{{ url_for('static', filename='art/flag_ch.jpg') }}" alt="flag_ch"/>
             </td>
         </tr>
         <tr>
@@ -39,7 +41,7 @@
                  <p>Our school is conveniently located on the internet, so you are
                     always close.
                 </p>
-                <p>For a <b><a href="free.shtml">free consultation</a></b>
+                <p>For a <b>free consultation</b>
                     with no obligation, <br/>please contact
                     us at (415) 938-9490 or<br/>germanlanguage101.com@gmail.com!
                 </p>
@@ -48,11 +50,17 @@
                 </button>
             </td>
             <td>
-                 <img src="{{ url_for('static', filename='art/laempel2.gif') }}" alt="laempel2"/>
+                 <img src="{{ url_for('static', filename='art/flag_a.jpg') }}" alt="flag_a"/>
             </td>
         </tr>
 
     </table>
+    <hr>
+    <div class="clearfix" id="job">
+      <span>Interesting in working for us? <a href="{{ url_for('job') }}">Click here to learn more.</a>
+       </span>
+        <img class="float-right" src="{{ url_for('static', filename='art/laempel2.gif') }}" alt="laempel2"/>
+    </div>
     <!--<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLingua-Marin-German-Language-School%2F124589070959562&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;height=62"-->
             <!--scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:68px;"-->
             <!--allowTransparency="true"></iframe>-->
