@@ -1,0 +1,44 @@
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-primary bg-primary">
+  <a class="navbar-brand" href="{{ url_for('home_de') }}"><strong>German Language 101</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto" id="nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('home_de') }}">Zuhause<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('whygerman_de') }}">Warum Deutsch lernen?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('children_de') }}">Kinder</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('adults_de') }}">Erwachsene</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('aboutus_de') }}">Über uns</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('contact_de') }}">Kontakt</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('resources_de') }}">Ressourcen</a>
+      </li>
+      <li class="nav-item dropdown mt-1 ml-3">
+       
+        <button href="#" class="dropdown-toggle btn btn-rose btn-round " id="dropdownMenuButton" data-toggle="dropdown">Jetzt registrieren!<b class="caret"></b></button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <h6 class="dropdown-header">Anmeldeformular</h6>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Für Kinder</a>
+        
+          <a class="dropdown-item" href="{ url_for('static', filename='files/lm-reg-adults.pdf') }}">Für Erwachsene</a>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

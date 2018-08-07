@@ -1,0 +1,11 @@
+<div id="lang-picker-bar">
+ 	<div class="dropdown">
+		<a class="dropdown-toggle" href="#" id="DropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Switch Language</a>
+		    <div class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+		        <a class="dropdown-item" href="{{ url_for('home') }}"><img  src="{{ url_for('static', filename='art/flag_en.png') }}" alt="flag_en" class="flag"/>en-English</a>
+		        <a class="dropdown-item" href="{{ url_for('home_de') }}"><img  src="{{ url_for('static', filename='art/flag_d.jpg') }}" alt="flag_d" class="flag"/>&nbsp;de-German</a>
+		        <a class="dropdown-item" href="{{ url_for('home_fr') }}"><img  src="{{ url_for('static', filename='art/flag_fr.png') }}" alt="flag_fr" class="flag"/>fr-French</a>
+	        </div>
+	    </div>
+</div>

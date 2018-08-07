@@ -1,0 +1,44 @@
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-primary bg-primary">
+  <a class="navbar-brand" href="{{ url_for('home_fr') }}"><strong>German Language 101</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto" id="nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ url_for('home_fr') }}">Page d'accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('whygerman_fr') }}">Pourquoi apprendre l'allemand?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('children_fr') }}">Les enfants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('adults_fr') }}">Adultes</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('aboutus_fr') }}">À propos de nous</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('contact_fr') }}">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('resources_fr') }}">Ressources</a>
+      </li>
+      <li class="nav-item dropdown mt-1 ml-3">
+       
+        <button href="#" class="dropdown-toggle btn btn-rose btn-round " id="dropdownMenuButton" data-toggle="dropdown">Inscrire maintenant!<b class="caret"></b></button>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <h6 class="dropdown-header">Formulaire d'inscription</h6>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{ url_for('static', filename='files/lm-reg-kids.pdf') }}">Pour les enfants</a>
+        
+          <a class="dropdown-item" href="{ url_for('static', filename='files/lm-reg-adults.pdf') }}">Pour adultes</a>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
